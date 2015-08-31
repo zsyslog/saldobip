@@ -17,6 +17,6 @@ http://bip.apps.zsyslog.com/saldo/:NUM_TARJETA/:RUT
 
 #CLIENT
 
-Live demo
+Live demo:
 
 http://jcjimenez.me/bip
