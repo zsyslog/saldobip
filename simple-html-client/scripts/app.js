@@ -4,6 +4,13 @@ jQuery(document).ready(function() {
         $(this).removeClass('input-error');
     });
     
+    $('#form-rut').Rut({
+        on_error: function(){ 
+            alert('Verifique que el RUT ingresado es correcto, por favor');
+            $('#form-rut').val('');
+        }
+    });
+
     $('.balance-form').on('submit', function(e) {
         
         $(this).find('input[type="text"]').each(function(){
@@ -21,7 +28,6 @@ jQuery(document).ready(function() {
             if (card!='' && rut!=''){
                 $('.spinner').removeClass('hide');
                 var url = "http://bip.apps.zsyslog.com/saldo/" + card + "/" + rut;
-                console.log(url);
                 $.ajax({
                     url: url,
                     method: "GET",
@@ -31,6 +37,7 @@ jQuery(document).ready(function() {
                         $('.card-status .value').text(data.card_status);
                         $('.card-activity .value').text(data.last_activity);
                         $('.spinner').addClass('hide');
+                        $('fa-credit-card').trigger('click');
                     },
                     error: function(e){
                         console.log(e);
