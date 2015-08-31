@@ -1,6 +1,6 @@
 # SaldoBip!
 
-Esta es un ejemplo de alternativa para consular el saldo de su tarjeta Bip!
+Este es un ejemplo de alternativa para consultar el saldo de su tarjeta Bip!
 
 Para consultar el saldo:
 
