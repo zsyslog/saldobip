@@ -1,0 +1,12 @@
+{
+  "name"         : "saldo-bip",
+  "version"      : "0.0.1",
+  "description"  : "Recupera saldo BIP",
+  "main"         : "server.js",
+  "author"       : "zsyslog",
+  "dependencies" : {
+    "request"    : "latest",
+    "cheerio"    : "latest",
+    "express"    : "latest"
+  }
+}
